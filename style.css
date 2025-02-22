@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -99,11 +100,11 @@ body {
 
 #slogan {
   background-color: #e3e6f3;
-  background-image: url("img/jenni.png");
-  height: 90vh;
+  background-image: url("img/jenniinthebox.png");
+  height: 70vh;
   width: auto;
   background-position: top 25% right 15%;
-  background-size: 31.8%;
+  background-size: 50%;
   background-repeat: no-repeat;
   padding: 0 80px;
   display: flex;
@@ -111,6 +112,22 @@ body {
   align-items: flex-start;
   justify-content: center;
   
+}
+
+/* Adiciona a rotação contínua ao logo */
+.logo {
+  animation: rotateInfinite 10s linear infinite; /* 3s para a duração da rotação */
+  transform-origin: center; /* Gira a partir do centro */
+}
+
+/* Defina a animação de rotação */
+@keyframes rotateInfinite {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 #slogan h4 {
@@ -121,7 +138,7 @@ body {
   color: #088178;
 }
 
-#slogan Button {
+/* #slogan Button { 
   background-image: url(img/button.png);
   background-color: transparent;
   color: #088178;
@@ -131,6 +148,127 @@ body {
   cursor: pointer;
   font-weight: 700px;
   font-size: 15px;
+}
+*/
+#slogan .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+#slogan .button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+#slogan .button:active {
+  transform: scale(0.97);
+}
+
+#slogan .hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#slogan .hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+#slogan .button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* === removing default button style ===*/
+.buttonw {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.buttonw {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 16px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.buttonw:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+#recursos {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 #recursos .rec-box {
