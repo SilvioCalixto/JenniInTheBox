@@ -134,8 +134,22 @@ body {
   padding-bottom: 15px;
 }
 
+#slogan a {
+  text-decoration: none;
+}
+
 #slogan h1 {
   color: #088178;
+}
+
+.animate__zoomInDown {
+  animation: animate__zoomInDown;
+  animation-duration: 2s;
+}
+
+.animate__zoomInUp {
+  animation: animate__zoomInDown;
+  animation-duration: 5s;
 }
 
 /* #slogan Button { 
@@ -157,6 +171,7 @@ body {
   padding: 15px 30px;
   border: 0;
   position: relative;
+  margin-left: 120px;
   overflow: hidden;
   border-radius: 10rem;
   transition: all 0.02s;
