@@ -235,7 +235,8 @@ body {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
   --animation-color: #37FF8B;
-  --fs-size: 16px;
+  --animation-color2: #dd2a7b;
+  --fs-size: 12px;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
@@ -258,10 +259,21 @@ body {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
+#insta .hover-text {
+  color: var(--animation-color2);
+  border-right: var(--border-right) solid var(--animation-color2);
+  -webkit-text-stroke: 1px var(--animation-color2);
+}
+
 /* hover */
 .buttonw:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+#insta .buttonw:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color2))
 }
 
 #recursos {
@@ -296,5 +308,25 @@ body {
   line-height: 1;
   border-radius: 4px;
   color: #088178;
+  background-color: #d1e8f2;
+}
+
+#recursos .rec-box:nth-child(2) h6 {
   background-color: #fddde4;
+}
+
+#recursos .rec-box:nth-child(3) h6 {
+  background-color: #cdebbc;
+}
+
+#recursos .rec-box:nth-child(4) h6 {
+  background-color: #fff2e5;
+}
+
+#recursos .rec-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+
+#recursos .rec-box:nth-child(6) h6 {
+  background-color: #cdd4f8;
 }
