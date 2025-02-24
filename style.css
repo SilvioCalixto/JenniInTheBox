@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+:root {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --animation-color2: #dd2a7b;
+  --fs-size: 12px;
+  --back-color:#e3e6f3;
+  --back-texto:#088178;
+}
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +61,7 @@ body {
   align-items:center;
   justify-content: space-between;
   padding: 0px 100px 0px 50px;
-  background: #e3e6f3;
+  background: var(--back-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
@@ -82,7 +91,7 @@ body {
 
 #menu li a:hover,
 #menu li a.ativo {
-  color: #088178;
+  color: var(--back-texto);
 }
 
 #menu li a.ativo::after,
@@ -90,7 +99,7 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--back-texto);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -99,7 +108,7 @@ body {
 /* Início */
 
 #slogan {
-  background-color: #e3e6f3;
+  background-color: var(--back-color);
   background-image: url("img/jenniinthebox.png");
   height: 70vh;
   width: auto;
@@ -139,7 +148,7 @@ body {
 }
 
 #slogan h1 {
-  color: #088178;
+  color: var(--back-texto);
 }
 
 .animate__zoomInDown {
@@ -247,11 +256,6 @@ body {
 
 /* button styling */
 .buttonw {
-  --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
-  --animation-color2: #dd2a7b;
-  --fs-size: 12px;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
@@ -322,7 +326,7 @@ body {
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
-  color: #088178;
+  color: var(--back-texto);
   background-color: #d1e8f2;
 }
 
