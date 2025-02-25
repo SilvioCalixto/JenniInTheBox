@@ -52,6 +52,19 @@ p {
   margin: 40px 0;
 }
 
+button.normal {
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s
+}
+
 body {
   width: 100%;
 }
@@ -350,6 +363,13 @@ body {
   background-color: #cdd4f8;
 }
 
+#product1 .pro-container{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap:wrap;
+}
+
 #product1 {
   text-align: center;
 }
@@ -364,6 +384,7 @@ body {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative;
 }
 
 #product1 .pro:hover {
@@ -403,12 +424,57 @@ body {
   color: #088178;
 }
 
-#product .pro .cart{
+#product1 .pro .cart{
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
   background-color: #e8f6ea;
-  font-weight: 500;
+  font-weight: 600;
   color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right:10px;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/banner/banner2.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+#banner h2 span{
+  color: #ef3636;
+  text-shadow: 2px 2px 2px black;
+  
+
+}
+
+#banner button:hover {
+  background: #088178;
+  color: #fff;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
