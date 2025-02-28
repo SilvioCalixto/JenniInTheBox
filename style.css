@@ -766,7 +766,7 @@ footer .copyright {
     height: 70vh;
     padding: 0 80px;
     background-position: top center;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
 
   #box {
@@ -820,21 +820,19 @@ footer .copyright {
 
 @media (max-width:477px) {
   #header {
-    padding: 20px 30px;
+    padding: 30px 30px;
   }
 
   #slogan {
     background-size: 90% auto;
-    overflow: hidden;
-    /* padding-bottom: 100vh; */
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 32px;;
+    font-size: 22px;;
   }
 
   #menu {
@@ -842,6 +840,6 @@ footer .copyright {
   }
 
   #box {
-    /* margin-top: 1200px; */
+    /* margin-top: 500px */
   }
 }
