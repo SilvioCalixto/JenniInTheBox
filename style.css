@@ -146,7 +146,7 @@ body {
   height: 70vh;
   width: auto;
   background-position: top 25% right 15%;
-  background-size: 50%;
+  background-size: 30%;
   background-repeat: no-repeat;
   padding: 0 80px;
   display: flex;
@@ -819,8 +819,11 @@ footer .copyright {
 }
 
 @media (max-width:477px) {
+  .section-p1 {
+    padding: 20px;
+  }
   #header {
-    padding: 30px 30px;
+    padding: 10px 30px;
   }
 
   #slogan {
@@ -839,7 +842,17 @@ footer .copyright {
     padding: 0 20px;
   }
 
-  #box {
-    /* margin-top: 500px */
+  #recursos {
+    justify-content: space-between;
   }
+
+  #recursos .rec-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #recursos .rec-box img {
+    background-size: 70vh;
+  }
+  
 }
