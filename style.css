@@ -769,6 +769,10 @@ footer .copyright {
     /* overflow-y: auto; */
   }
 
+  #slogan h3 {
+    margin-left: 0;
+  }
+
   #box {
   margin-top: 400PX;
   text-align: center;
@@ -852,7 +856,35 @@ footer .copyright {
   }
 
   #recursos .rec-box img {
-    background-size: 70vh;
+    height: 15vh;
   }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+
+  #banner3 {
+    padding: 0 20px;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+  }
+
+  #novidades .form {
+
+  width: 100%;
   
 }
