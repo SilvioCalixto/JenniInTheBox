@@ -142,18 +142,37 @@ body {
 
 #slogan {
   background-color: var(--back-color);
-  background-image: url("img/jenniinthebox.png");
+  /* background-image: url("img/jenniinthebox.png"); */
   height: 70vh;
   width: auto;
-  background-position: top 25% right 15%;
-  background-size: 30%;
-  background-repeat: no-repeat;
+  /* background-position: top 25% right 15%; */
+  /* background-size: 35%; */
+  /* background-repeat: no-repeat; */
   padding: 0 80px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  /* justify-content: center */
   
+}
+
+#box {
+  
+  height: auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#box2 {
+  height: auto;
+  width: 50%;
+  background-image: url("img/jenniinthebox.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 
 /* Adiciona a rotação contínua ao logo */
@@ -213,7 +232,6 @@ body {
   padding: 15px 30px;
   border: 0;
   position: relative;
-  /* margin-left: 120px; */
   overflow: hidden;
   border-radius: 10rem;
   transition: all 0.02s;
@@ -774,7 +792,7 @@ footer .copyright {
   }
 
   #box {
-  margin-top: 400PX;
+  margin-top: 250PX;
   text-align: center;
   }
 
@@ -831,7 +849,8 @@ footer .copyright {
   }
 
   #slogan {
-    background-size: 90% auto;
+    background-size: 70%;
+    height: 110vh;
   }
 
   h1 {
@@ -841,6 +860,7 @@ footer .copyright {
   h2 {
     font-size: 22px;;
   }
+
 
   #menu {
     padding: 0 20px;
@@ -886,5 +906,5 @@ footer .copyright {
   #novidades .form {
 
   width: 100%;
-  
+  }
 }
