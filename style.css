@@ -482,9 +482,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("img/banner/banner2.jpg");
+  background-image: url("img/banner/espaco-minimo-de-escrivaninha-e-copia-de-relogio-de-pulso_23-2148748619.jpg");
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
@@ -528,7 +528,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("img/banner/um-conjunto-de-canetas-hidrograficas.jpg");
-  min-width: 580px; /* 580px */
+  min-width: 520px; /* 580px */
   height: 50vh; /* 50vh */
   background-size: cover;
   background-position: center;
@@ -577,7 +577,7 @@ body {
   align-items: flex-start;
   background-image: url("img/banner/composicao-de-ferramentas.jpg");
   min-width: 32%; /* 580px */
-  height: 50vh; /* 50vh */
+  height: 30vh; /* 50vh */
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -778,22 +778,29 @@ footer .copyright {
 
   #slogan {
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    padding: 0 80px;
-    background-position: top center;
+    height: 100vh;
+    width: auto;
+    padding: 0 0px;
+    /* background-position: top center; */
     /* overflow-y: auto; */
+  }
+
+  #box {
+    height: 50vh;
+    width: auto;
+  }
+
+  #box2 {
+    height: 50vh;
+    width: 100vh;
+    background-size: 50vh;
   }
 
   #slogan h3 {
     margin-left: 0;
-  }
-
-  #box {
-  margin-top: 250PX;
-  text-align: center;
   }
 
   #recursos{
@@ -844,6 +851,8 @@ footer .copyright {
   .section-p1 {
     padding: 20px;
   }
+
+
   #header {
     padding: 10px 30px;
   }
@@ -864,6 +873,7 @@ footer .copyright {
 
   #menu {
     padding: 0 20px;
+    padding-top: 70px;
   }
 
   #recursos {
@@ -907,4 +917,5 @@ footer .copyright {
 
   width: 100%;
   }
+
 }
