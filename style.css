@@ -722,7 +722,7 @@ footer .copyright {
 
 /* Shop */
 #page-header {
-  background-image: url(img/banner/b1.jpg);
+  background-image: url("img/banner/b1.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -820,6 +820,10 @@ footer .copyright {
 }
 
 /* Blog */
+
+#page-header .blog-header {
+  background-image: url("img/banner/b19.jpg");
+}
 
 /* About */
 
@@ -1022,6 +1026,23 @@ footer .copyright {
 
   width: 100%;
   }
+
+  /* Single Product */
+
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: auto;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
 
 }
 
