@@ -821,11 +821,114 @@ footer .copyright {
 
 /* Blog */
 
-#page-header .blog-header {
+#page-header.blog-header {
   background-image: url("img/banner/b19.jpg");
 }
 
-/* About */
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;;
+  position: relative;
+  transition: 0.3s;
+}
+
+  #blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+  }
+
+  #blog .blog-details a:hover {
+    color: var(--back-texto);
+  }
+
+  #blog .blog-details a:hover::after {
+    background-color: var(--back-texto);
+  }
+
+  #blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+  }
+
+
+/* Sobre */
+
+#page-header.sobre-header {
+  background-image: url("img/about/banner.png");
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ccc;
+  animation: scroll-text 25s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#sobre-head {
+  display: flex;
+  align-items: center;
+}
+
+#sobre-head img {
+  width: 90vh;
+  height: auto;
+}
+
+#sobre-head div {
+  padding-left: 40px;
+}
+
+
 
 /* Contact */
 
@@ -1040,6 +1143,27 @@ footer .copyright {
   }
 
   #prodetails .single-pro-details {
+    width: 100%;
+  }
+/* Blog Page */
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #blog .blog-details {
     width: 100%;
   }
 
