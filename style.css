@@ -896,6 +896,21 @@ footer .copyright {
   background-image: url("img/about/banner.png");
 }
 
+#sobre-head {
+  display: flex;
+  align-items: center;
+}
+
+#sobre-head img {
+  width: 50%;
+  height: auto;
+}
+
+#sobre-head div {
+  padding-left: 40px;
+  width: 50%;
+}
+
 .scrolling-text {
   white-space: nowrap;
   overflow: hidden;
@@ -914,21 +929,22 @@ footer .copyright {
   }
 }
 
-#sobre-head {
-  display: flex;
-  align-items: center;
+#sobre-app {
+  text-align: center;
 }
 
-#sobre-head img {
-  width: 90vh;
-  height: auto;
+#sobre-app .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
 }
 
-#sobre-head div {
-  padding-left: 40px;
+#sobre-app .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
 }
-
-
 
 /* Contact */
 
@@ -1167,6 +1183,24 @@ footer .copyright {
     width: 100%;
   }
 
+  /* Sobre */
+
+  #sobre-head {
+    flex-direction: column;
+  }
+
+  #sobre-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #sobre-head div {
+    padding-left: 0px;
+  }
+
+  #sobre-app .video {
+    width: 100%;
+  }
 
 }
 
